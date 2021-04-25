@@ -1,4 +1,4 @@
-class Country {
+class API {
   async getCountryCases(country_name) {
     const monthsNames = [
       'Jan',
@@ -57,6 +57,7 @@ class Country {
       country.forEach((item) => {
         list.push(item.Country);
       });
+      list.sort();
     } catch (e) {
       error = true;
     }

@@ -1,4 +1,4 @@
-const api = new Country();
+const api = new API();
 
 // Init UI
 const ui = new UI();

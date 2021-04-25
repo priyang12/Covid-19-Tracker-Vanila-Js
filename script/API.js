@@ -7,6 +7,7 @@ class API {
       'Apr',
       'May',
       'Jun',
+      'Junly',
       'Aug',
       'Sep',
       'Oct',

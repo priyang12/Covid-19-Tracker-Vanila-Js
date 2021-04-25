@@ -3,6 +3,13 @@
   margin: 0%;
   box-sizing: border-box;
 }
+#spinner {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #container {
   background: url('./image/bg\ covid.jpg') repeat center center/cover;
   height: 100vh;
@@ -21,7 +28,7 @@
   margin: 2rem;
 }
 #graph {
-  height: fit-content;
+  /* height: fit-c; */
   border: 5px solid wheat;
   border-radius: 20px;
   background-color: antiquewhite;
@@ -117,6 +124,15 @@
   #graph {
     height: 400px;
   }
+  #country {
+    width: 10rem;
+  }
+  #spinner {
+    display: flex;
+    position: relative;
+    bottom: 50%;
+    z-index: 1;
+  }
   .card {
     margin: 3rem;
     padding: 1rem;
@@ -126,4 +142,7 @@
   #logo {
     display: none;
   }
+  /* #graph {
+    height: 400px;
+  } */
 }

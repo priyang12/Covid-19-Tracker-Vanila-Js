@@ -7,6 +7,7 @@ const ui = new UI();
 const country = document.getElementById('country');
 const graph = document.getElementById('graph');
 const btn = document.getElementById('btn');
+const spinner = document.getElementById('spinner');
 
 const loadlist = () => {
   api.getCountrylist().then((data) => {
@@ -27,6 +28,8 @@ const load = (name) => {
           data.deaths_list,
           data.formatedDates
         );
+        graph.style.display = 'block';
+        spinner.style.display = 'none';
       } else {
         load(name);
       }
@@ -40,6 +43,8 @@ const init = () => {
   loadlist();
   load('india');
   btn.addEventListener('click', (e) => {
+    spinner.style.display = 'block';
+    graph.style.display = 'none';
     const name = country.value;
     load(name);
   });

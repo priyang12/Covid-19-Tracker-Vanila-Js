@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="top">
+        <img src="image/covid-19-4960254__340.png" alt="" srcset="" id="logo" />
+        <div class="card">
+          <div class="card-text">
+            <span class="date">2020 / 2021</span>
+            <h2>Total Cases</h2>
+          </div>
+          <div class="card-stats">
+            <div class="stat">
+              <div id="active_cases">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-text">
+            <span class="date">2020 / 2021</span>
+            <h2 class="recover_cases">recoved Cases</h2>
+          </div>
+          <div class="card-stats recover_cases">
+            <div class="stat">
+              <div id="recover_cases">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-text death_cases">
+            <span class="date">2020 / 2021</span>
+            <h2>Total Deaths</h2>
+          </div>
+          <div class="card-stats death_cases">
+            <div class="stat">
+              <div id="death_cases">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div id="list">
+          <select id="country" name="country"></select>
+          <button id="btn">Submit</button>
+        </div>
+        <canvas id="graph"></canvas>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="script/country.js"></script>
+  <script src="script/UI.js"></script>
+  <script src="script/app.js"></script>
+</html>

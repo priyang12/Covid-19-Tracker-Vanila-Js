@@ -1,0 +1,129 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+#container {
+  background: url('./image/bg\ covid.jpg') repeat center center/cover;
+  height: 100vh;
+}
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+#logo {
+  margin: 1rem;
+  height: 13rem;
+}
+#bottom {
+  margin: 2rem;
+}
+#graph {
+  height: fit-content;
+  border: 5px solid wheat;
+  border-radius: 20px;
+  background-color: antiquewhite;
+}
+#list {
+  margin: 1rem;
+}
+#country {
+  padding: 1rem;
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+#btn {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+.btn:hover {
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.692);
+  border: 2px solid antiquewhite;
+}
+.card {
+  /* display: grid;
+  grid-template-columns: 200px;
+  grid-template-areas: 'image' 'text' 'stats'; */
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 30px;
+}
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.card-text .date {
+  color: black;
+  font-size: 16px;
+}
+.card-text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-stats {
+  grid-area: stats;
+  font-size: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: black;
+}
+
+.card-stats .stat {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.recover_cases {
+  color: rgb(0, 189, 63);
+}
+
+.card-stats.recover_cases {
+  background: rgb(0, 189, 63);
+}
+/*card3*/
+
+.death_cases {
+  color: red;
+}
+
+.card-stats.death_cases {
+  background: red;
+}
+@media only screen and (max-width: 600px) {
+  #top {
+    display: block;
+  }
+  #logo {
+    margin: 0rem;
+    width: inherit;
+    /* height: 13rem; */
+  }
+  #graph {
+    height: 400px;
+  }
+  .card {
+    margin: 3rem;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-height: 450px) and (max-width: 1000px) {
+  #logo {
+    display: none;
+  }
+}

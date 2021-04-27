@@ -8,10 +8,17 @@ class UI {
 
     this.mygraphChart = null;
   }
-  updateCountry(Active_cases, Recover_cases, Death_cases, Dates) {
+  updateCountry(
+    Active_cases,
+    Recover_cases,
+    Death_cases,
+    Dates,
+    maxRecovered,
+    maxDeaths
+  ) {
     this.active_cases.innerHTML = Active_cases[Active_cases.length - 1];
-    this.recover_cases.innerHTML = Recover_cases[Recover_cases.length - 1];
-    this.death_cases.innerHTML = Death_cases[Death_cases.length - 1];
+    this.recover_cases.innerHTML = maxRecovered;
+    this.death_cases.innerHTML = maxDeaths;
     this.show_graph(Active_cases, Recover_cases, Death_cases, Dates);
   }
   updateList(list) {

@@ -26,12 +26,15 @@ const load = (name) => {
           data.cases_list,
           data.recovered_list,
           data.deaths_list,
-          data.formatedDates
+          data.formatedDates,
+          data.maxRecovered,
+          data.maxDeaths
         );
+        console.log(data.maxRecovered);
         graph.style.display = 'block';
         spinner.style.display = 'none';
       } else {
-        load(name);
+        // load(name);
       }
     });
   } else {

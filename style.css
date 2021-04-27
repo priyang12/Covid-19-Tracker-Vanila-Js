@@ -11,7 +11,7 @@
   transform: translate(-50%, -50%);
 }
 #container {
-  background: url('./image/bg\ covid.jpg') repeat center center/cover;
+  background: url('./image/bg\ covid-new.png') repeat center center/cover;
   height: 100vh;
 }
 #top {
@@ -46,7 +46,7 @@
   padding: 1rem 2rem;
   margin-top: 1rem;
 }
-.btn:hover {
+#btn:hover {
   color: antiquewhite;
   background-color: rgba(0, 0, 0, 0.692);
   border: 2px solid antiquewhite;

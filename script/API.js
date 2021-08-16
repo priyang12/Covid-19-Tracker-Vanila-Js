@@ -1,3 +1,4 @@
+'use strict';
 class API {
   async getCountryCases(country_name) {
     const monthsNames = [

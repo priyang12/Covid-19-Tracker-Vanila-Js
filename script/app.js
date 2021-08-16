@@ -1,3 +1,5 @@
+'use strict';
+
 const api = new API();
 
 // Init UI

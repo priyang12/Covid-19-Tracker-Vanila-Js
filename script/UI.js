@@ -1,3 +1,4 @@
+'use strict';
 class UI {
   constructor() {
     this.lists = document.getElementById('country');
